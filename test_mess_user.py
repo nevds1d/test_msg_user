@@ -23,11 +23,4 @@ def test_mes_user():
     browser.element(".btn--lg").click()
     # Открываю влкадку сообщения
     browser.element("/html/body/header/div/nav/ul/li[4]/a").click()
-    # Проверка на доставку сообщения
-    subject = "йоу"
-    # Я устал! Переробовал кучу вариантов, уже слишком поздно, подскажите плиз :)
-    if browser.element('.message__subject') == subject:
-        print('Все ок, попей воды!')
-    else:
-        print('Нуб ты, а не тестер! ахах')
     time.sleep(4)
